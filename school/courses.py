@@ -7,4 +7,7 @@ def view_courses(courses_data: list[dict[str, str]]) -> None:
         courses_data (list): A list of dictionaries containing course details. 
                               Each dictionary has keys like 'course_name', 'instructor', and 'duration'.
     """
-    pass
+    
+    for kurs in range(len(courses_data)):
+        print("\nAvailable Courses:")
+        print("{}. {} (Duration: {}, Instructor: {})".format(kurs + 1,courses_data[kurs]['course_name'], courses_data[kurs]["duration"], courses_data[kurs]["instructor"]))
