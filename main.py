@@ -10,8 +10,9 @@ def main():
     students_data = []
     
     courses_data = [
+
         {"course_name": "Python Basics", "instructor": "John Doe", "duration": "8 weeks", "price": 500},
-        {"course_name": "Data Science 101", "instructor": "Jane Smith", "duration": "10 weeks", "price": 780}
+        {"course_name": "Data Science 101", "instructor": "Jane Smith", "duration": "10 weeks", "price": 780},
         {"Course_name": "Backend react", "instructor": "zingh malou", "duration": "6 weeks", "prise": 1200}
     ]
 
@@ -26,7 +27,7 @@ def main():
 
             students_data.append(new_student)
 
-            print("Registration successful! Welcome, {}".format(new_student["name"]), end="\n\n") 
+            print(f"Registration successful! Welcome, {new_student}") 
         elif choose_commond == 2:
             
             user = students.login_student(students_data)
@@ -60,7 +61,7 @@ def main():
                        
         elif choose_commond == 3:
         
-            print("Darslaringizga doimo omad tilaymiz ")
+            print("Xizamtimizdan foydalanganingizdan xursandmiz  ")
             exit()
         
         else: 

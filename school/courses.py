@@ -8,6 +8,8 @@ def view_courses(courses_data: list[dict[str, str]]) -> None:
                               Each dictionary has keys like 'course_name', 'instructor', and 'duration'.
     """
     
-    for kurs in range(len(courses_data)):
+    def view_courses(courses_data: list):
         print("\nAvailable Courses:")
-        print("{}. {} (Duration: {}, Instructor: {})".format(kurs + 1,courses_data[kurs]['course_name'], courses_data[kurs]["duration"], courses_data[kurs]["instructor"]))
+
+        for i in range(len(courses_data)):
+            print(f"{i + 1}, {courses_data[i]['course_name']} (Duration: {courses_data[i]['duration']}, Instructor: {courses_data[i]['instructor']})")
